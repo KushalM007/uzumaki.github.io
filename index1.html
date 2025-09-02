@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal M - Personal Website</title>
+    <!-- Google Fonts for professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0a2540;
+            --accent-color: #0073e6;
+            --bg-color: #fff;
+            --text-color: #222;
+            --menu-bg: #f8f9fa;
+            --border-radius: 8px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--menu-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        nav .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 32px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 32px auto 0 auto;
+            padding: 24px;
+            background: var(--bg-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .profile-img {
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            background: #e6e9ef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+            /* You can replace this with an actual profile image */
+        }
+
+        .intro-text {
+            flex: 1 1 200px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+
+        section {
+            margin-top: 32px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+
+        ul.hobbies-list {
+            list-style: disc;
+            padding-left: 22px;
+            margin: 0 0 16px 0;
+        }
+
+        .academics-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .academics-table th, .academics-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: left;
+        }
+
+        .academics-table th {
+            background: #f3f6fa;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .academics-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .college-info {
+            background: #f5faff;
+            padding: 18px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 12px;
+            }
+            main {
+                padding: 12px;
+            }
+            .intro {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .profile-img {
+                width: 80px;
+                height: 80px;
+                font-size: 1.5rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .college-info {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kushal M</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#college">College</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="about">
+            <div class="profile-img">
+                <!-- Placeholder initials. Replace with profile photo if needed. -->
+                KM
+            </div>
+            <div class="intro-text">
+                <h1>Kushal M</h1>
+                <div class="subtitle">Aspiring Computer Science Engineer | Student at BMSIT&M</div>
+                <p>
+                    Hi! I'm Kushal M, an 18-year-old passionate learner with a keen interest in technology and creativity. Currently, I am a first-year student pursuing Computer Science Engineering (CSE) at BMS Institute of Technology & Management. I strive to blend my academic pursuits with my hobbies, aiming for both personal and professional growth.
+                </p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul class="hobbies-list">
+                <li>Badminton</li>
+                <li>Watching Animes</li>
+                <li>Reading Mangas</li>
+                <li>Drawing Anime Characters</li>
+            </ul>
+        </section>
+
+        <section id="academics">
+            <h2>Academic Achievements</h2>
+            <table class="academics-table">
+                <tr>
+                    <th>Exam</th>
+                    <th>Score / Rank</th>
+                </tr>
+                <tr>
+                    <td>10th Board Exams</td>
+                    <td>92%</td>
+                </tr>
+                <tr>
+                    <td>12th Board Exams</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>JEE Mains</td>
+                    <td>95 Percentile</td>
+                </tr>
+                <tr>
+                    <td>K-CET</td>
+                    <td>Rank: 11,473</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="college">
+            <h2>College Information</h2>
+            <div class="college-info">
+                <strong>Institution:</strong> BMS Institute of Technology & Management (BMSIT&M)<br>
+                <strong>Course:</strong> Computer Science Engineering (CSE)<br>
+                <strong>Year:</strong> First Year Student
+            </div>
+        </section>
+    </main>
+</body>
+  </html>
